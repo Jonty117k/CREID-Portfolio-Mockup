@@ -1,0 +1,143 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.navbar {
+	color: white;
+	margin-top: 30px;
+	font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap-reverse;
+	justify-content: center;
+	position: absolute;
+	z-index: 2;
+}
+.header-title {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	align-items: center;
+}
+#title {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: 9%;
+	transform: scale(.42);
+}
+#gallery-image {
+/*	position: absolute;
+*/	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	z-index: 1;
+}
+
+#home-icon {
+	height: 45px;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+	margin-left: 90px;
+}
+.nav {
+	color: white;
+	font-size: 20px;
+	margin: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold; 
+    text-decoration: none;	
+}
+.nav:hover {
+	border-bottom: 3px solid white;
+}
+
+#menu-icon {
+	height: 45px;
+	position: absolute;
+	right: 0;
+	margin-right: 90px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+#info-section {
+	height: 350px;
+/*	position: absolute;
+*/	background-color: gray;
+	z-index: 1;
+	top: 350px;
+	text-align: center;
+}
+.icons {
+	display: block;
+	position: relative;
+	height: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	top: 60px;
+}
+.info-title {
+	position: relative;
+	font-family: 'Work Sans Semi-Bold', sans-serif;
+	font-weight: bold;
+	color: #222222;
+	top: 45px;
+}
+.info-blurb {
+	font-family: 'Work Sans Semi-Bold', sans-serif;
+	font-weight: bold;
+	color: #222222;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+.left-arrow {
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	transform: scale(.1);
+	cursor: pointer;
+}
+.right-arrow {
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	transform: scale(.1);
+	cursor: pointer;
+}
+.left-arrow:hover {
+}
+.right-arrow:hover {
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
