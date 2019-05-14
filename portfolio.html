@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caitlin Reid | Graphic Design & Photography</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="row">
+		<div id="header-gallery">
+			<div class="column">
+				<div class="row navbar">
+					<div class="column">
+						<a><img id="home-icon" src="images/cr-logo.png"></a>
+					</div>
+						<a class="nav" href="">Portfolio</a>
+						<a class="nav" href="">About</a>
+						<a class="nav" href="">Commission</a>
+						<a class="nav" href="">Contact</a>
+					<div class="column">
+						<div id="showMenu" class="container" onclick="myFunction(this)">
+						  <div class="bar1"></div>
+						  <div class="bar2"></div>
+						  <div class="bar3"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row header-title">
+					<img id="title" src="images/header-title.png">
+					<a><img class="left-arrow" src="images/left-arrow.png"></a>
+					<a><img class="right-arrow" src="images/right-arrow.png"></a>
+				</div>			
+			</div>
+			<img id="gallery-image" src="images/header-image-1.png">
+		</div>
+	</div>
+	<div class="row" id="info-section">
+		<div class="column">
+			<div id="photography">
+				<img class="icons" src="images/camera.png">
+				<h1 class="info-title">Photography</h1>
+				<p class="info-blurb">
+					I want to capture your special moment. Whether it's your favorite sunset for your wall or a family portrait for Christmas, I'll service prints you'll fall in love with! 
+				</p>
+			</div>
+		</div>
+		<div class="column">
+			<div id="branding">
+				<img class="icons" src="images/branding.png">
+				<h1 class="info-title">Branding</h1>
+				<p class="info-blurb">
+					Slogans, market research, building brand loyaly: I have 5 years of marketing experience and I'll help you build your company or product's brand and help you find its audience.
+				</p>
+			</div>
+		</div>
+		<div class="column">
+			<div id="logo">
+				<img class="icons" src="images/design.png">
+				<h1 class="info-title">Logo Design</h1>
+				<p class="info-blurb">
+					I'm a painter and illustrator of 17 years and have won several awards for my work. I design logos in all sorts of styles and I'll find one you love and in various color schemes you can pick from.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="work-section">
+			<div class="row">
+				<div class="column" id="work-title">
+					My Work
+				</div>
+			</div>
+			<div class="nav-row">
+				<div class="work-nav">
+					<a><div>Process</div></a>
+				</div>
+					<div class="work-nav">|</div>
+				<div class="work-nav">
+					<a><div>Skills</div></a>
+				</div>
+					<div class="work-nav">|</div>
+				<div class="work-nav">
+					<a><div>Equipment</div></a>
+				</div>
+			</div>
+			<div class="gallery-row">
+				<img class="gallery-arrow" src="images/left-arrow.png">
+
+				<img class="gallery-item" src="images/itm1.jpg">
+				<img class="gallery-item" src="images/itm2.jpg">
+				<img class="gallery-item" src="images/itm3.jpg">
+
+				<img class="gallery-arrow" src="images/right-arrow.png">
+			</div>
+	</div>
+	<div class="row" id="footer">
+		<div class="column" style="padding-top: 50px">
+			<div class="footer-row footer-text">1-908-581-0666</div>
+			<div class="footer-row footer-text">crtlart@gmail.com</div>
+			<div class="footer-row footer-text">Built with WordPress</div>
+		</div>
+		<div class="column" style="padding-top: 50px">
+			<div class="footer-row">
+				<img id="footer-logo" src="images/cr-logo.png">
+			</div>
+			<div class="footer-row footer-text">All Rights Reserved</div>
+		</div>	
+		<div class="column" style="padding-top: 50px">
+			<div class="footer-row">
+				<img class="sm-icon" src="images/behance.png">
+				<img class="sm-icon" src="images/twit.png" style="padding-left: 12px">
+				<img class="sm-icon" src="images/fb.png" style="padding-left: 12px">
+			</div>
+		</div>			
+	</div>
+</body>
+<script type="text/javascript">
+		function myFunction(x) {
+		  x.classList.toggle("change");
+		}
+
+		//Image gallery array
+		var gallery_images = ['images/header-image-1.png', 'images/header-image-2.png', 'images/header-image-3.png'];
+
+		//Gallery code
+		var imageNum = 0;
+
+		$('.left-arrow').on('click', function(){
+			$('#gallery-image').removeClass('animated fadeInLeft');	
+			imageNum++;
+			if (imageNum === 1) {
+				$('#gallery-image').attr('src', 'images/header-image-2.png');
+				$('#gallery-image').addClass('animated fadeInLeft');
+			}
+			if (imageNum === 2) {
+				$('#gallery-image').attr('src', 'images/header-image-3.png');
+				$('#gallery-image').addClass('animated fadeInLeft');
+			}
+			if (imageNum === 3) {
+				imageNum = 0;
+				$('#gallery-image').attr('src', 'images/header-image-1.png');
+				$('#gallery-image').addClass('animated fadeInLeft');
+			}		
+		});
+		$('.right-arrow').on('click', function(){
+			imageNum--;
+			if(imageNum<0) {
+				imageNum=3;
+			}
+			if (imageNum === 1) {
+				$('#gallery-image').attr('src', 'images/header-image-2.png');
+				$('#gallery-image').addClass('animated fadeInRight');
+			}
+			if (imageNum === 2) {
+				$('#gallery-image').attr('src', 'images/header-image-3.png');
+				$('#gallery-image').addClass('animated fadeInRight');
+			}
+			if (imageNum === 3) {
+				$('#gallery-image').attr('src', 'images/header-image-1.png');
+				$('#gallery-image').addClass('animated fadeInRight');
+			}			
+		});
+		$(document).ready( function() {
+		$(".sidemenu").fly_sidemenu({
+		btnContent: "=", // This option let you define what appears inside the side menu button. You can add your custom icon here. This option accepts all HTML tags. The default value is "=" string.
+		position: "left", // This option will let you define where the sidebar will appear on the page. Available options are "top", "left", "right", "bottom". The default value is "left"
+		customSelector: "li", // In case you do not want to use lists, simply define your own css selector here. The default value is "li".
+		hideButton: false // You can disable the auto creation of toggle button by changing this to true. The default value is false.
+		});
+		});
+
+</script>
+</html>
