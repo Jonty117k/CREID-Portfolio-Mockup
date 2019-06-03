@@ -1,74 +1,336 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html>
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
+	<title>Caitlin Reid | Graphic Design & Photography</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
-
 <body>
+	<div class="row">
+		<div id="header-gallery">
+			<div class="column">
+				<div class="row navbar">
+					<div class="column">
+						<a><img id="home-icon" src="images/cr-logo.png"></a>
+					</div>
+						<a class="nav" href="">Portfolio</a>
+						<a class="nav" href="">About</a>
+						<a class="nav" href="">Commission</a>
+						<a class="nav" href="">Contact</a>
+					<div class="column">
+						<span onclick="navToggle()">
+							<div class="container" onclick="myFunction(this)">
+							  <div class="bar1"></div>
+							  <div class="bar2"></div>
+							  <div class="bar3"></div>
+							</div>
+						</span>
+						<div id="myNav" class="overlay">
+						  <div class="overlay-content">
+						    <a href="#">Portfolio</a>
+						    <a href="#">About</a>
+						    <a href="#">Commission</a>
+						    <a href="#">Contact</a>
+						    <div class="footer-row-ol">
+								<img class="sm-icon" src="images/behance.png">
+								<img class="sm-icon" src="images/twit.png" style="padding-left: 12px">
+								<img class="sm-icon" src="images/fb.png" style="padding-left: 12px">
+							</div>
 
-  <nav class="menu-activea">
-     <span>
-     <h1>
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-      </h1>
-    </span>
-  <ul>
-    <li>Home</li>
-    <li>Info</li>
-    <li>Order</li>
-    <li>Repair</li>
-    <li>Contact</li>
-  </ul>
-</nav>
-<main>
-  <img class="top" src="img/top-image.png">
-  <img class="middle" src="img/middle-image.png">
-  <img class="bottom" src="img/bottom-image.png">
-  <img class="footer" src="img/footer-image.png">
-</main>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="row header-title">
+					<img id="title" src="images/header-title.png">
+					<a><img class="left-arrow" src="images/left-arrow.png"></a>
+					<a><img class="right-arrow" src="images/right-arrow.png"></a>
+				</div>			
+			</div>
+			<img id="gallery-image" src="images/header-image-1.png">
+		</div>
+	</div>
+	<div class="row" id="info-section">
+		<div class="column">
+			<div id="photography">
+				<img class="icons" src="images/camera.png">
+				<h1 class="info-title">Photography</h1>
+				<p class="info-blurb">
+					I want to capture your special moment. Whether it's your favorite sunset for your wall or a family portrait for Christmas, I'll service prints you'll fall in love with! 
+				</p>
+			</div>
+		</div>
+		<div class="column">
+			<div id="branding">
+				<img class="icons" src="images/branding.png">
+				<h1 class="info-title">Branding</h1>
+				<p class="info-blurb">
+					Slogans, market research, building brand loyaly: I have 5 years of marketing experience and I'll help you build your company or product's brand and help you find its audience.
+				</p>
+			</div>
+		</div>
+		<div class="column">
+			<div id="logo">
+				<img class="icons" src="images/design.png">
+				<h1 class="info-title">Logo Design</h1>
+				<p class="info-blurb">
+					I'm a painter and illustrator of 17 years and have won several awards for my work. I design logos in all sorts of styles and I'll find one you love and in various color schemes you can pick from.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row" id="work-section">
+			<div class="row">
+				<div class="column" id="work-title">
+					My Work
+				</div>
+			</div>
+			<div class="nav-row">
+				<div class="work-nav">
+					<a><div>Gallery</div></a>
+				</div>
+					<div class="work-nav">|</div>
+				<div class="work-nav">
+					<a><div>Skills</div></a>
+				</div>
+					<div class="work-nav">|</div>
+				<div class="work-nav">
+					<a><div>Equipment</div></a>
+				</div>
+			</div>
+			<div class="gallery-row">
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+				<img class="gallery-arrow" src="images/left-arrow.png">
 
-  
+				<img class="gallery-item" src="images/itm1.jpg">
 
-    <script  src="js/index.js"></script>
+				<img class="gallery-item" src="images/itm2.jpg">
+
+				<img class="gallery-item" src="images/itm3.jpg">
+
+
+				<img class="gallery-arrow" src="images/right-arrow.png">
+
+			</div>
+	</div>
+	<div class="row" id="footer">
+		<div class="column" style="padding-top: 50px">
+			<div class="footer-row footer-text">1-908-581-0666</div>
+			<div class="footer-row footer-text">crtlart@gmail.com</div>
+			<div class="footer-row footer-text">Built with WordPress</div>
+		</div>
+		<div class="column" style="padding-top: 50px">
+			<div class="footer-row">
+				<img id="footer-logo" src="images/cr-logo.png">
+			</div>
+			<div class="footer-row footer-text-1">All Rights Reserved</div>
+		</div>	
+		<div class="column" style="padding-top: 50px">
+			<div class="footer-row">
+				<img class="sm-icon" src="images/behance.png">
+				<img class="sm-icon" src="images/twit.png" style="padding-left: 12px">
+				<img class="sm-icon" src="images/fb.png" style="padding-left: 12px">
+			</div>
+		</div>			
+	</div>
+	<div id="gallery-overlay" class="gallery-overlay">
+		<div class="animated fadeInDown container1">
+					<div class="select-cont">
+						<img class="item select-gallery sidebar" src="images/itm1.jpg">
+						<h1 id="img-stats1" class="stats">
+							Location: Delmonico's<br>
+							Date: 10/5/2015
+						</h1>
+						<h1 id="img-stats2" class="stats">
+							Location: Chinatown<br>
+							Date: 8/15/2017
+						</h1>
+						<h1 id="img-stats3" class="stats">
+							Location: Midtown<br>
+							Date: 5/3/2017
+						</h1>												
+					</div>
+					<div>
+						<img class="item gallery" src="images/itm4.jpg">
+						<img class="item gallery gal2" src="images/itm2.jpg">
+						<img class="item gallery gal3" src="images/itm3.jpg">
+					</div>
+					<div>
+						<img class="item gallery" src="images/itm5.jpg">
+						<img class="item gallery" src="images/itm6.jpg">
+						<img class="item gallery" src="images/itm7.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
 <script type="text/javascript">
-    function myFunction(x) {
-      x.classList.toggle("change");
-    }
-    $('h1, .bar1, .bar2, .bar3').on('mouseover', function() {
-      $('.bar1, .bar2, .bar3').css('background-color', '#424242');
-    });
-    $('h1, .bar1, .bar2, .bar3').on('mouseout', function() {
-      $('.bar1, .bar2, .bar3').css('background-color', 'white');
-    });    
+
+		function myFunction(x) {
+		  x.classList.toggle("change");
+		}
+
+		var isOpen = false;
+
+		function navToggle() {
+		  if (isOpen === false) {
+		  	document.getElementById("myNav").style.height = "100%";
+		  	isOpen = true;
+		  } else {
+		  	document.getElementById("myNav").style.height = "0%";
+		    isOpen = false;
+		  }
+		}
+
+		//Image gallery array
+		var gallery_images = ['images/header-image-1.png', 'images/header-image-2.png', 'images/header-image-3.png'];
+
+		//Gallery code
+		var imageNum = 0;
+
+		$('.left-arrow').on('click', function(){
+		  $( "#gallery-image" ).fadeOut(300);
+		  $('#gallery-image').attr('src', 'images/header-image-2.png');
+		  $('#gallery-image').fadeIn(300); 
+		});
+		$('.right-arrow').on('click', function(){
+		  $( "#gallery-image" ).fadeOut(300);
+		  $('#gallery-image').attr('src', 'images/header-image-1.png');
+		  $('#gallery-image').fadeIn(300); 
+		});
+
+
+</script>
+<script type="text/javascript">
+	$('#img-stats2').hide();
+	$('#img-stats3').hide();
+
+	$('.select-gallery').on('click', function() {
+		$('.container1').removeClass('fadeInDown');
+		$('.container1').addClass('fadeOutUp');
+		setTimeout(function(){ $('#gallery-overlay').fadeOut(500) }, 900);
+	});
+
+	$('.gal2').on('click', function() {
+		$('#img-stats1').hide();
+		$('#img-stats2').show();
+	});
+	$('.gal3').on('click', function() {
+		$('#img-stats2').hide();
+		$('#img-stats3').show();
+	});
+
+	$('.gallery-overlay').hide();
+	$('.gallery-item').on('click', function() {
+		$('.gallery-overlay').show();
+	})
+	$('.gallery').on('click', function(){
+		$('.select-gallery').attr('src',$(this).attr('src'));
+	})
 </script>
 <style type="text/css">
-  .top {
-    position: absolute;
-    top: 0;
-    width: 100%; 
-  }
-  .middle {
-    position: fixed;
-    top: 478px;
-    width: 100%; 
-  }
-  .bottom {
-    position: absolute;
-    top: 770px;
-    width: 100%;
-  }  
-  .footer {
-  }  
-</style>
+	#img-stats1 {
+		position: absolute;
+		z-index: 5;
+		font-size: 12px;
+		color: white;
+		font-family: arial; 
+	}
+	#img-stats2 {
+		position: absolute;
+		z-index: 5;
+		font-size: 12px;
+		color: white;
+		font-family: arial; 
+	}
+	#img-stats3 {
+		position: absolute;
+		z-index: 5;
+		font-size: 12px;
+		color: white;
+		font-family: arial; 
+	}
 
-</body>
+	.gallery-overlay {
+		width: 100%;
+		height: 100%;
+		background-color: #595959;
+		opacity: ;
+	}
+	.select-cont {
+		box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+		height: 500px;
+		width: 350px;
+		margin: 50px;
+		overflow: hidden;
+	}
+	.select-gallery {
+	  background-size: cover;
+	  width: 100%;
+	  height: 100%;
+	  transition: 1s ease-out;
+	
+	}
+	.select-gallery:hover {
+		height: 105%;
+  		width: 105%;
+	}
+	.gallery {
+		margin: 50px;
+		height: 125px;
+		width: 90px;
+	}
+	.gallery:hover {
+	  transition: 0.3s;
+	  -webkit-filter: brightness(1);
+	  filter: brightness(1.3);		
+	}
+	.container1 {
+	  margin-top: 10%;
+	  display: grid;
+	  height: 800px;
+	  grid-gap: 1rem;
+	  grid-template-areas:
+	      "sidebar sidebar content-1"
+	      "sidebar sidebar content-2"
+	      "sidebar sidebar content-3";
+	}
+	.item {
+	  background-color: #1EAAFC;
+	  background-image: linear-gradient(130deg, #6C52D9 0%, #1EAAFC 85%, #3EDFD7 100%);
+	  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	  color: #ffffff;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  font-size: 18px;
+	  font-weight: bold;
+	  cursor: pointer;
+	}
+	.gallery-overlay {
+	  position: absolute;
+	  z-index: 5;
+	  background-color: #3f3f3f;
+	  display: flex;
+	  justify-content: center;
+	  height: 100%;
+	  width: 100%;
+	  position: fixed;
+	  z-index: 3;
+	  top: 0;
+	  left: 0;
+	  background-color: rgb(0,0,0);
+	  background-color: rgba(0,0,0, 0.9);
+	  overflow-y: hidden;
+	  transition: 0.5s;
+	}
+	.sidebar {
+	  grid-area: sidebar;
+	}
+</style>
 
 </html>
